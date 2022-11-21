@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import useEth from "../../contexts/EthContext/useEth";
 import Title from "./Title";
 import Cta from "./Cta";
@@ -12,7 +12,7 @@ function Demo() {
   const { state } = useEth();
   const [value, setValue] = useState("?");
 
-  const demo =
+  const demo = (
     <>
       <Cta />
       <div className="contract-container">
@@ -20,16 +20,19 @@ function Demo() {
         <ContractBtns setValue={setValue} />
       </div>
       <Desc />
-    </>;
+    </>
+  );
 
   return (
     <div className="demo">
       <Title />
-      {
-        !state.artifact ? <NoticeNoArtifact /> :
-          !state.contract ? <NoticeWrongNetwork /> :
-            demo
-      }
+      {!state.artifact ? (
+        <NoticeNoArtifact />
+      ) : !state.contract ? (
+        <NoticeWrongNetwork />
+      ) : (
+        demo
+      )}
     </div>
   );
 }

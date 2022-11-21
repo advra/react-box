@@ -1,3 +1,5 @@
+import React from "react";
+
 function Tree() {
   return (
     <code>
@@ -7,9 +9,7 @@ function Tree() {
         {`   # React project (create-react-app)\n`}
       </span>
       {`└── truffle`}
-      <span className="primary-color">
-        {`  # Truffle project`}
-      </span>
+      <span className="primary-color">{`  # Truffle project`}</span>
     </code>
   );
 }

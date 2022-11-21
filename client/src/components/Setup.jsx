@@ -1,5 +1,6 @@
-function Setup() {
+import React from "react";
 
+function Setup() {
   return (
     <>
       <h2>Preparation</h2>
@@ -13,17 +14,21 @@ function Setup() {
       <details>
         <summary>Ganache and MetaMask</summary>
         <p>
-          Open a terminal and run Ganache, a simulated Ethereum blockchain on your machine.
+          Open a terminal and run Ganache, a simulated Ethereum blockchain on
+          your machine.
         </p>
         <code>$ ganache</code>
-        <p>From the list of generated private keys, import the first one to MetaMask.</p>
+        <p>
+          From the list of generated private keys, import the first one to
+          MetaMask.
+        </p>
       </details>
 
       <details>
         <summary>Truffle</summary>
         <p>
-          Keep Ganache running and open another terminal. Let's compile and deploy our
-          contracts to Ganache.
+          Keep Ganache running and open another terminal. Let's compile and
+          deploy our contracts to Ganache.
         </p>
         <code>
           {`$ cd truffle\n`}

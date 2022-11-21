@@ -1,6 +1,6 @@
 # React client
 
-This project is bootstraped with [Create React App](https://create-react-app.dev). It is unopinionated with only `web3.js` as an added dependency, so nothing stands in your way.
+This project is bootstraped with [Create React App](https://create-react-app.dev) modified with Typescript. It is unopinionated with only `web3.js` as an added dependency, so nothing stands in your way.
 
 ## Getting started
 
